@@ -1,0 +1,20 @@
+{
+  "name": "bkc-bots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=dev nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkuzmick/bkc-bots.git"
+  },
+  "author": "mk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkuzmick/bkc-bots/issues"
+  },
+  "homepage": "https://github.com/mkuzmick/bkc-bots#readme"
+}
