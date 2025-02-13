@@ -1,6 +1,7 @@
 const llog = require('learninglab-log');
 const ts280 = require('../bots/ts280/index');
 const rainbowTests = require('../bots/rainbow-tests/index');
+const bkc = require('../bots/bkc-bots')
 
 const isBotMessage = (message) => {
     return message.subtype === "bot_message";
@@ -30,7 +31,7 @@ exports.parseAll = async ({ client, message, say, event }) => {
 
     llog.gray(message);
     if (message.text) {
-        const result = await rainbowTests({ client, message, say, event })
+        const result = await bkc({ client, message, say, event })
     } else {
         llog.blue("message has no text")
     }
